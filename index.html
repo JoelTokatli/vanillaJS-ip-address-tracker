@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-rubik">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
@@ -25,10 +25,10 @@
     <title>Ip Address Tracker</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
   </head>
-  <body class="font-rubik">
-    <main id="app-container h-screen">
+  <body>
+    <main id="app-container h-full w-full">
       <nav
-        class="bg-[url('./images/pattern-bg.png')] h-56 bg-no-repeat flex flex-col justify-evenly items-center w-full"
+        class="bg-[url('./images/pattern-bg.png')] h-56 bg-no-repeat bg-cover flex flex-col justify-evenly items-center w-full"
       >
         <h1 class="text-white text-2xl -mt-12">IP Address Tracker</h1>
         <p class="text-gray-300 -mt-6 bg-black opacity-50 p-1 text-center">
@@ -78,7 +78,7 @@
           </article>
         </ul>
       </div>
-      <div id="map" class="sm:h-[64vh] h-[120vh] z-0"></div>
+      <div id="map" class="h-screen z-0"></div>
     </main>
   </body>
   <script type="module" src="index.js"></script>
