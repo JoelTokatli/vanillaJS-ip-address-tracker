@@ -21,18 +21,19 @@
   <body>
     <main id="app-container h-screen">
       <nav
-        class="bg-hero h-56 bg-no-repeat flex flex-col justify-evenly items-center"
+        class="bg-hero h-56 bg-no-repeat flex flex-col justify-evenly items-center w-full"
       >
+        <!-- PurgeCSS: bg-hero -->
         <h1 class="text-white text-2xl -mt-12">IP Address Tracker</h1>
         <form id="form" class="flex -mt-12">
           <input
             type="text"
             id="form-input"
-            class="w-96 p-2 rounded-sm outline-none"
-            placeholder="Type any IP here..."
+            class="lg:w-96 w-72 p-2 rounded-sm outline-none"
+            placeholder="Search for any IP address..."
           />
           <input
-            type="button"
+            type="submit"
             value=">"
             id="form-btn"
             class="text-white bg-black p-2 w-10 rounded-r cursor-pointer hover:bg-zinc-800 active:scale-105"
@@ -41,27 +42,27 @@
       </nav>
       <div class="grid justify-items-center">
         <ul
-          class="flex bg-gray-50 p-3 w-[800px] justify-between z-10 absolute -translate-y-10 rounded-lg"
+          class="flex flex-col bg-white w-80 sm:p-3 justify-between text-center gap-4 z-10 absolute -translate-y-10 rounded-lg p-5 :flex-row lg:w-[800px]"
         >
           <article>
-            <p>IP ADDRESS</p>
-            <p>192.168.1626.231</p>
+            <p class="text-xs text-gray-500">IP ADDRESS</p>
+            <p id="article-ip" class="text-xl mt-1"></p>
           </article>
           <article>
-            <p>LOCATION</p>
-            <p>Brookly. NY 10001</p>
+            <p class="text-xs text-gray-500">LOCATION</p>
+            <p id="article-location" class="text-xl mt-1"></p>
           </article>
           <article>
-            <p>TIMEZONE</p>
-            <p>UTC -05:00</p>
+            <p class="text-xs text-gray-500">TIMEZONE</p>
+            <p id="article-timezone" class="text-xl mt-1"></p>
           </article>
           <article>
-            <p>ISP</p>
-            <p>SpaceX Starlink</p>
+            <p class="text-xs text-gray-500">ISP</p>
+            <p class="text-xl mt-1" id="article-isp"></p>
           </article>
         </ul>
       </div>
-      <div id="map" class="h-full min-h-screen z-0"></div>
+      <div id="map" class="sm:h-[64vh] h-[120vh] z-0"></div>
     </main>
   </body>
   <script type="module" src="index.js"></script>
