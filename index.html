@@ -25,13 +25,15 @@
     <title>Ip Address Tracker</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
   </head>
-  <body>
+  <body class="font-rubik">
     <main id="app-container h-full w-full">
       <nav
         class="bg-[url('./images/pattern-bg.png')] h-56 bg-no-repeat bg-cover flex flex-col justify-evenly items-center w-full"
       >
         <h1 class="text-white text-2xl -mt-12">IP Address Tracker</h1>
-        <p class="text-gray-300 -mt-6 bg-black opacity-50 p-1 text-center">
+        <p
+          class="text-gray-300 -mt-6 bg-black opacity-50 p-1 text-center lg:w-full w-72 text-xs"
+        >
           By default this app will get your IP info, try these to see how it
           works: <b> 208.81.181.125 / 138.133.115.222 / 41.181.129.75</b>
         </p>
@@ -39,7 +41,7 @@
           <input
             type="text"
             id="form-input"
-            class="lg:w-96 w-72 p-2 rounded-sm outline-none"
+            class="lg:w-96 w-60 p-2 rounded-sm outline-none"
             placeholder="Search for any IP address..."
           />
           <input
@@ -52,7 +54,7 @@
       </nav>
       <div class="grid justify-items-center">
         <ul
-          class="flex flex-col bg-white w-80 sm:p-3 justify-between text-center gap-4 z-10 absolute -translate-y-10 rounded-lg p-5 lg:flex-row lg:w-[800px]"
+          class="flex flex-col bg-white w-80 sm:p-3 justify-between text-center gap-4 z-10 absolute -translate-y-10 rounded-lg lg:flex-row lg:w-[800px] p-0"
         >
           <article class="grid justify-items-center">
             <p class="text-xs text-gray-500 tracking-widest">IP ADDRESS</p>
