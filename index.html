@@ -16,16 +16,26 @@
       integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
       crossorigin=""
     ></script>
-    <title>Ip address tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ip Address Tracker</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
   </head>
-  <body>
+  <body class="font-rubik">
     <main id="app-container h-screen">
-      <!-- bg-hero -->
       <nav
         class="bg-[url('./images/pattern-bg.png')] h-56 bg-no-repeat flex flex-col justify-evenly items-center w-full"
       >
         <h1 class="text-white text-2xl -mt-12">IP Address Tracker</h1>
-        <form id="form" class="flex -mt-12">
+        <p class="text-gray-300 -mt-6 bg-black opacity-50 p-1 text-center">
+          By default this app will get your IP info, try these to see how it
+          works: <b> 208.81.181.125 / 138.133.115.222 / 41.181.129.75</b>
+        </p>
+        <form id="form" class="flex -mt-10">
           <input
             type="text"
             id="form-input"
@@ -44,21 +54,27 @@
         <ul
           class="flex flex-col bg-white w-80 sm:p-3 justify-between text-center gap-4 z-10 absolute -translate-y-10 rounded-lg p-5 lg:flex-row lg:w-[800px]"
         >
-          <article>
-            <p class="text-xs text-gray-500">IP ADDRESS</p>
-            <p id="article-ip" class="text-xl mt-1"></p>
+          <article class="grid justify-items-center">
+            <p class="text-xs text-gray-500 tracking-widest">IP ADDRESS</p>
+            <p id="article-ip" class="text-xl mt-1 font-bold text-center"></p>
           </article>
-          <article>
-            <p class="text-xs text-gray-500">LOCATION</p>
-            <p id="article-location" class="text-xl mt-1"></p>
+          <article class="grid justify-items-center">
+            <p class="text-xs text-gray-500 tracking-widest">LOCATION</p>
+            <p
+              id="article-location"
+              class="text-xl mt-1 font-bold text-center"
+            ></p>
           </article>
-          <article>
-            <p class="text-xs text-gray-500">TIMEZONE</p>
-            <p id="article-timezone" class="text-xl mt-1"></p>
+          <article class="grid justify-items-center">
+            <p class="text-xs text-gray-500 tracking-widest">TIMEZONE</p>
+            <p
+              id="article-timezone"
+              class="text-xl mt-1 font-bold text-center"
+            ></p>
           </article>
-          <article>
-            <p class="text-xs text-gray-500">ISP</p>
-            <p class="text-xl mt-1" id="article-isp"></p>
+          <article class="grid justify-items-center">
+            <p class="text-xs text-gray-500 tracking-widest">ISP</p>
+            <p class="text-xl mt-1 font-bold text-center" id="article-isp"></p>
           </article>
         </ul>
       </div>
